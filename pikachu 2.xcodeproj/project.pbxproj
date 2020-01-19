@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08555601707D63BD1F6BB816 /* Pods_pikachu_2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3251C6FF557274212648AD4 /* Pods_pikachu_2.framework */; };
 		2079518923D49EC2008CEA10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2079518823D49EC2008CEA10 /* AppDelegate.swift */; };
 		2079518B23D49EC2008CEA10 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2079518A23D49EC2008CEA10 /* SceneDelegate.swift */; };
 		2079518D23D49EC2008CEA10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2079518C23D49EC2008CEA10 /* ViewController.swift */; };
@@ -24,6 +25,9 @@
 		2079519123D49EC5008CEA10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2079519423D49EC5008CEA10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2079519623D49EC5008CEA10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F86C6DDBA51C386F4AF0850 /* Pods-pikachu 2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pikachu 2.debug.xcconfig"; path = "Target Support Files/Pods-pikachu 2/Pods-pikachu 2.debug.xcconfig"; sourceTree = "<group>"; };
+		A3251C6FF557274212648AD4 /* Pods_pikachu_2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pikachu_2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C37EA2909B40C9211ED43BA9 /* Pods-pikachu 2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pikachu 2.release.xcconfig"; path = "Target Support Files/Pods-pikachu 2/Pods-pikachu 2.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08555601707D63BD1F6BB816 /* Pods_pikachu_2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				2079518723D49EC2008CEA10 /* pikachu 2 */,
 				2079518623D49EC2008CEA10 /* Products */,
+				291A89137ABCFB313027AFB0 /* Pods */,
+				79153B7EDE0827CDDFD37188 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = "pikachu 2";
 			sourceTree = "<group>";
 		};
+		291A89137ABCFB313027AFB0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2F86C6DDBA51C386F4AF0850 /* Pods-pikachu 2.debug.xcconfig */,
+				C37EA2909B40C9211ED43BA9 /* Pods-pikachu 2.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		79153B7EDE0827CDDFD37188 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3251C6FF557274212648AD4 /* Pods_pikachu_2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2079519923D49EC5008CEA10 /* Build configuration list for PBXNativeTarget "pikachu 2" */;
 			buildPhases = (
+				DE1A2C1522CFEDA516CA21E4 /* [CP] Check Pods Manifest.lock */,
 				2079518123D49EC2008CEA10 /* Sources */,
 				2079518223D49EC2008CEA10 /* Frameworks */,
 				2079518323D49EC2008CEA10 /* Resources */,
@@ -132,6 +158,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DE1A2C1522CFEDA516CA21E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-pikachu 2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2079518123D49EC2008CEA10 /* Sources */ = {
@@ -282,10 +333,11 @@
 		};
 		2079519A23D49EC5008CEA10 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F86C6DDBA51C386F4AF0850 /* Pods-pikachu 2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7AXP552NXR;
+				DEVELOPMENT_TEAM = A87ACY483Z;
 				INFOPLIST_FILE = "pikachu 2/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,10 +352,11 @@
 		};
 		2079519B23D49EC5008CEA10 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C37EA2909B40C9211ED43BA9 /* Pods-pikachu 2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7AXP552NXR;
+				DEVELOPMENT_TEAM = A87ACY483Z;
 				INFOPLIST_FILE = "pikachu 2/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
