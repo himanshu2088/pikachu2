@@ -10,7 +10,7 @@ import UIKit
 import VisionKit
 import Vision
 
-class ViewController: UIViewController {
+class CameraVC: UIViewController {
     
     //Private Variables
     private var requests = [VNRequest]()
@@ -118,7 +118,7 @@ class ViewController: UIViewController {
         
 }
 
-extension ViewController: VNDocumentCameraViewControllerDelegate {
+extension CameraVC: VNDocumentCameraViewControllerDelegate {
     
     public func documentCameraViewController(_ controller: VNDocumentCameraViewController, didFinishWith scan: VNDocumentCameraScan) {
         textView.text = ""

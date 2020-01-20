@@ -8,19 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		08555601707D63BD1F6BB816 /* Pods_pikachu_2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3251C6FF557274212648AD4 /* Pods_pikachu_2.framework */; };
+		2018CC5023D4E18C00D56FDF /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2018CC4F23D4E18C00D56FDF /* MainVC.swift */; };
 		2079518923D49EC2008CEA10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2079518823D49EC2008CEA10 /* AppDelegate.swift */; };
 		2079518B23D49EC2008CEA10 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2079518A23D49EC2008CEA10 /* SceneDelegate.swift */; };
-		2079518D23D49EC2008CEA10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2079518C23D49EC2008CEA10 /* ViewController.swift */; };
+		2079518D23D49EC2008CEA10 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2079518C23D49EC2008CEA10 /* CameraVC.swift */; };
 		2079519023D49EC2008CEA10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2079518E23D49EC2008CEA10 /* Main.storyboard */; };
 		2079519223D49EC5008CEA10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2079519123D49EC5008CEA10 /* Assets.xcassets */; };
 		2079519523D49EC5008CEA10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2079519323D49EC5008CEA10 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2018CC4F23D4E18C00D56FDF /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		2079518523D49EC2008CEA10 /* pikachu 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pikachu 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2079518823D49EC2008CEA10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2079518A23D49EC2008CEA10 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2079518C23D49EC2008CEA10 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2079518C23D49EC2008CEA10 /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
 		2079518F23D49EC2008CEA10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2079519123D49EC5008CEA10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2079519423D49EC5008CEA10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -65,7 +67,8 @@
 			children = (
 				2079518823D49EC2008CEA10 /* AppDelegate.swift */,
 				2079518A23D49EC2008CEA10 /* SceneDelegate.swift */,
-				2079518C23D49EC2008CEA10 /* ViewController.swift */,
+				2018CC4F23D4E18C00D56FDF /* MainVC.swift */,
+				2079518C23D49EC2008CEA10 /* CameraVC.swift */,
 				2079518E23D49EC2008CEA10 /* Main.storyboard */,
 				2079519123D49EC5008CEA10 /* Assets.xcassets */,
 				2079519323D49EC5008CEA10 /* LaunchScreen.storyboard */,
@@ -80,7 +83,6 @@
 				2F86C6DDBA51C386F4AF0850 /* Pods-pikachu 2.debug.xcconfig */,
 				C37EA2909B40C9211ED43BA9 /* Pods-pikachu 2.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -189,7 +191,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2079518D23D49EC2008CEA10 /* ViewController.swift in Sources */,
+				2079518D23D49EC2008CEA10 /* CameraVC.swift in Sources */,
+				2018CC5023D4E18C00D56FDF /* MainVC.swift in Sources */,
 				2079518923D49EC2008CEA10 /* AppDelegate.swift in Sources */,
 				2079518B23D49EC2008CEA10 /* SceneDelegate.swift in Sources */,
 			);
